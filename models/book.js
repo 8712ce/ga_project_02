@@ -7,8 +7,8 @@ const bookSchema = new Schema(
     {
         title: { type: String, required: true },
         author: { type: String, required: true },
-        genre: { type: String, enum: [ 'fiction', 'nonfiction'] },
-        subgenre: { type: String, enum: [ 'Action / Adventure', 'Biographical', 'Comedy / Dark Comedy', 'Drama', 'Experimental', 'Fantasy', 'Graphic Novel', 'Historical', 'Horror', 'Mystery', 'Science Fiction', 'Thriller', 'War' ], required: true },
+        genre: { type: String, enum: [ 'fiction', 'nonfiction'], required: true },
+        subgenre: { type: String, enum: [ 'Action / Adventure', 'Biographical', 'Comedy', 'Drama', 'Experimental', 'Fantasy', 'Graphic Novel', 'Historical', 'Horror', 'Mystery', 'Science Fiction', 'Thriller', 'War' ], required: true },
         rating: { type: Number, min: 0, max: 5 },
         image: { type: String, default: 'https://sainfoinc.com/wp-content/uploads/2018/02/image-not-available-570x570.jpg' }
     }

@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 // CONNECT TO MONGODB VIA MONGOOSE //
-const connectionString = "mongodb://localhost:3000/library"
+const connectionString = "mongodb://localhost/library"
 mongoose.connect(
     connectionString,
     { useNewUrlParser: true, useUnifiedTopology: true }
