@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+}
+
+.menu {
+    margin: 1em;
+    border: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+}

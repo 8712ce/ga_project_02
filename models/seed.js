@@ -26,12 +26,12 @@ const seed_books = [
         image: "https://m.media-amazon.com/images/I/51VBPBhxQIL._AC_SY780_.jpg"
     },
     {
-        title: "Bury My Heart at Wounded Knee",
-        author: "Dee Brown",
+        title: "Facing the Other Way: The Story of 4AD",
+        author: "Martin Aston",
         genre: "Nonfiction",
-        subgenre: "Historical",
+        subgenre: "Biographical",
         rating: 5,
-        image: "https://m.media-amazon.com/images/I/51VBPBhxQIL._AC_SY780_.jpg"
+        image: "https://m.media-amazon.com/images/I/51Dn0WOB7PL.jpg"
     },
     {
         title: "The Mystery of the Spiral Bridge",
