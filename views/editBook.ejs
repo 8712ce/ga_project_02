@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/show.css" />
+    <title>Document</title>
+</head>
+<body>
+    <form action="/books/<%= book._id %>?_method=PUT" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" required value="<%= book.title %>"/>
+
+        <label for="author">Author:</label>
+        <input type="text" name="author" required value="<%= book.author %>"/>
+
+        <label for="genre">Genre:</label>
+        <select name="genre">
+            <option value="Fiction">Fiction</option>
+            <option value="Nonfiction">Nonfiction</option>
+        </select>
+
+        <label for="subgenre">Subgenre</label>
+        <select name="subgenre">
+            <option value="Action / Adventure">Action / Adventure</option>
+            <option value="Biographical">Biographical</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Experimental">Experimental</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Graphic Novel">Graphic Novel</option>
+            <option value="Historical">Historical</option>
+            <option value="Horror">Horror</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Science">Science</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Thriller">Thriller</option>
+            <option value="War">War</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <input type="text" name="description" required value="<%= book.description %>"/>
+
+        <label for="image">Image:</label>
+        <input type="text" name="image" value="<%= book.image %>"/>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <a href="/">Home</a>
+</body>
+</html>

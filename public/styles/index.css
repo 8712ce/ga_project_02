@@ -1,9 +1,9 @@
 .main {
-    display: flex;
+    /* display: flex; */
 }
 
 .menu {
-    margin: 1em;
+    /* margin: 1em; */
     border: 1px solid black;
 }
 

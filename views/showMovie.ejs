@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/show.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Library of Movies</h1>
+
+    <main>
+        <div>
+            <h2><%= movie.title %></h2>
+            <img src=<%= movie.image %> width="300"/>
+            <p>Director: <%= movie.director %></p>
+            <p>Genre: <%= movie.genre %></p>
+            <p>Description: <%= movie.description %></p>
+        </div>
+    </main>
+    
+    <a href="/movies/<%= movie._id %>/edit">Edit</a>
+
+    <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete Movie</button>
+    </form>
+    
+    <a href="/">Home</a>
+
+
+</body>
+</html>

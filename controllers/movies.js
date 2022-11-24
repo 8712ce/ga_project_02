@@ -5,25 +5,20 @@ const router = express.Router()
 
 // NEW (GET/READ) ROUTE:  THIS ROUTE RENDERS A FORM THE USER WILL USE TO POST (CREATE) A NEW MOVIE. //
 router.get('/new', (req, res) => {
-    res.render('newMovie.ejs', {
+    res.render('newMovie', {
         tabTitle: "Post a Movie"
     })
 })
 
-// CREATE (POST) ROUTE:  THIS ROUTE RECEIVES THE POST REQUEST SENT FROM THE NEW ROUTE ABOVE, PARSES IT INTO A MOVIE OBJECT, CREATES THE MOVIE OBJECT AS A DOCUMENT IN THE MOVIES COLLECTION, AND REDIRECTS THE USER BACK TO THE ROOT/HOME PAGE. //
+// CREATE (POST) ROUTE:  THIS ROUTE RECEIVES THE POST REQUEST SENT FROM THE NEW ROUTE ABOVE, PARSES IT INTO A MOVIE OBJECT, CREATES THE MOVIE OBJECT AS A DOCUMENT IN THE MOVIES COLLECTION, AND REDIRECTS THE USER TO THE SHOW PAGE FOR THE NEW MOVIE THAT WAS CREATED. //
 router.post('/', (req, res) => {
-    if (req.body.visited) {
-        req.body.visited = true
-    } else {
-        req.body.visited = false
-    }
     db.Movie.create(req.body, (err, movie) => {
-        res.redirect('/movie/' + movie._id)
+        res.redirect('/movies/show/' + movie._id)
     })
 })
 
 // SHOW (GET/READ) ROUTE:  THIS ROUTE WILL SHOW AN INDIVIDUAL MOVIE DOCUMENT USING THE URL PARAMETER (WHICH WILL ALWAYS BE THE MOVIE DOCUMENT'S ID). //
-router.get('/:id', (req, res) => {
+router.get('/show/:id', (req, res) => {
     db.Movie.findById(req.params.id, (err, movie) => {
         res.render("showMovie", {
             movie: movie,
@@ -49,10 +44,10 @@ router.get('/:id/edit', (req, res) => {
     })
 })
 
-// UPDATE (PUT) ROUTE:  THIS ROUTE RECEIVES THE PUT REQUEST SENT FROM THE EDIT ROUTE ABOVE, PARSES IT INTO A MOVIE OBJECT, EDITS TEH SPECIFIED MOVIE OBJECT AS A DOCUMENT IN THE MOVIES COLLECTION, AND REDIRECTS THE USER BACK TO THE SHOW PAGE FOR THE UPDATED MOVIE. //
+// UPDATE (PUT) ROUTE:  THIS ROUTE RECEIVES THE PUT REQUEST SENT FROM THE EDIT ROUTE ABOVE, PARSES IT INTO A MOVIE OBJECT, EDITS THE SPECIFIED MOVIE OBJECT AS A DOCUMENT IN THE MOVIES COLLECTION, AND REDIRECTS THE USER BACK TO THE SHOW PAGE FOR THE UPDATED MOVIE. //
 router.put('/:id', (req, res) => {
-    db.Movie.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, location) => {
-        res.redirect('/movie/' + movie._id)
+    db.Movie.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, movie) => {
+        res.redirect('/movies/show/' + movie._id)
     })
 })
 
