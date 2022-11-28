@@ -38,7 +38,7 @@
                         <% for (let movie of movies) { %>
                             <div class="list">
                                 <a href="/movies/show/<%= movie._id %>">
-                                    <img src=<%= movie.image %> height="400"/>
+                                    <img class="image" src=<%= movie.image %> height="400"/>
                                 </a>
                                 <a href="/movies/show/<%= movie._id %>">
                                     <h3><%= movie.title %></h3>
