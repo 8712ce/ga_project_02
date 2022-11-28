@@ -1,6 +1,6 @@
 // DEPENDENCIES //
 const mongoose = require("mongoose");
-
+require('dotenv').config()
 // CONNECT TO MONGODB VIA MONGOOSE //
 const connectionString = process.env.MONGO_DB_URI
 // "mongodb://localhost/library" //
