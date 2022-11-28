@@ -5,6 +5,7 @@ const port = 3000
 const methodOverride = require('method-override');
 
 // ACCESS MODELS //
+require('dotenv').config()
 const db = require('./models')
 
 // ACCESS CONTROLLERS //

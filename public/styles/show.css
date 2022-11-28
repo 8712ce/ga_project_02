@@ -1,0 +1,105 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(234,241,252);
+    background: linear-gradient(0deg, rgba(234,241,252,1) 0%, rgba(203,210,223,1) 100%);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#book-shelf, #movie-shelf {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    min-height: 50%;
+    margin: auto;
+    text-align: center;
+    overflow: scroll;
+    position: relative;
+    background-color: white;
+    border: 2em solid white;
+    border-radius: 0.75em;
+    margin-bottom: 5em;
+}
+
+.desc {
+    text-align: justify;
+}
+
+.show-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.remove {
+    /* align-items: center; */
+    margin: auto;
+}
+
+button {
+    margin-bottom: 2em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(203,210,223);
+    border-bottom: 1px solid rgba(203,210,223);
+    margin: 3em 0em 2em 0em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: rgb(108, 143, 155);
+}
+
+/* MODAL CODE START */
+/* MODAL CODE START */
+
+#modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+#modal-textbox {
+    background-color: white;
+    width: 40%;
+    block-size: fit-content;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    line-height: 120%;
+    font-family: sans-serif;
+    border-radius: 0.75em;
+    text-align: center;
+}
+
+#openModal {
+    margin: 0.5em 0em 0.5em 0em;
+}
+
+.modal-buttons {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* MODAL CODE END */
+/* MODAL CODE END */

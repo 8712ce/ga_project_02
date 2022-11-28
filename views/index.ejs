@@ -5,48 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css" />
-    <title>Document</title>
+    <title>Fill the Shelf</title>
 </head>
-<body>
-    <h1>Library Test</h1>
-    <div class="main">
-        <div class="menu">
-            <h1>Books Library</h1>
-            <ul>
-                <% for (let book of books) { %>
-                    <li>
-                        <a href="/books/show/<%= book._id %>">
-                            <img src=<%= book.image %> width="300"/>
-                        </a>
-                        <h3><%= book.title %></h3>
-                        <p><%= book.author %></p>
-                    </li>
-                    <% } %>
-            </ul>
-            <h2><a href="/books/new">Recommend a Book!</a></h2>
+    <body>
+        <h1>Fill the Shelf</h1>
+        <p>Hey!  Do you have awesome taste in art?  Yeah?  Well, please help me fill my shelves with some recommendations.  Thanks in advance!</p>
+        <div>
+            <h1>The Book Shelf</h1>
+            <h3><a href="/books/new">Add a Book to the Shelf</a></h3>
+                <div id="book-shelf">
+                    <div class="flex-container">
+                        <% for (let book of books) { %>
+                            <div class="list">
+                                <a href="/books/show/<%= book._id %>">
+                                    <img class="image" src=<%= book.image %> height="400"/>
+                                </a>
+                                <a href="/books/show/<%= book._id %>">
+                                    <h3><%= book.title %></h3>
+                                </a>
+                                <p><%= book.author %></p>
+                            </div>
+                            <% } %>
+                        </div>
+                </div>
         </div>
 
-        <div class="menu">
-            <h1>Movies Library</h1>
-            <ul>
-                <% for (let movie of movies) { %>
-                    <li>
-                        <a href="/movies/show/<%= movie._id %>">
-                            <img src=<%= movie.image %> width="300"/>
-                        </a>
-                        <h3><%= movie.title %></h3>
-                        <p><%= movie.director %></p>
-                    </li>
-                    <% } %>
-            </ul>
-            <h2><a href="/movies/new">Recommend a Movie!</a></h2>
+        <div>
+            <h1>The Movie Shelf</h1>
+            <h3><a href="/movies/new">Add a Movie to the Shelf</a></h3>
+                <div id="movie-shelf">
+                    <div class="flex-container">
+                        <% for (let movie of movies) { %>
+                            <div class="list">
+                                <a href="/movies/show/<%= movie._id %>">
+                                    <img src=<%= movie.image %> height="400"/>
+                                </a>
+                                <a href="/movies/show/<%= movie._id %>">
+                                    <h3><%= movie.title %></h3>
+                                </a>
+                                <p><%= movie.director %></p>
+                            </div>
+                            <% } %>
+                        </div>
+                </div>
         </div>
-    </div>    
-
-
-
-
-
-
-</body>
+    </body>
 </html>

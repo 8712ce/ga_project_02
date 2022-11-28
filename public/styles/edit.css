@@ -3,51 +3,48 @@ html {
 }
 
 body {
-    /* background: rgb(234,241,252); */
+    background: rgb(234,241,252);
     background: linear-gradient(0deg, rgba(234,241,252,1) 0%, rgba(203,210,223,1) 100%);
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
 }
 
+#book-shelf, #movie-shelf {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    min-height: 60vh;
+    margin: auto;
+    text-align: center;
+    overflow: scroll;
+    position: relative;
+    background-color: white;
+    border: 2em solid white;
+    border-radius: 0.75em;
+    margin-bottom: 5em;
+}
+
 .flex-container {
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
+    flex-direction: column;
 }
 
-#book-shelf {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 50%;
-    overflow: scroll;
-    position: relative;
-    background-color: white;
-    border: 2em solid white;
-    border-radius: 0.75em;
-    margin-bottom: 5em;
+label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
-#movie-shelf {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 50%;
-    overflow: scroll;
-    position: relative;
-    background-color: white;
-    border: 2em solid white;
-    border-radius: 0.75em;
-    margin-bottom: 5em;
+input {
+    margin-bottom: 2em;
 }
 
-.list {
-    margin: 0 1.5em;
+select {
+    margin-bottom: 2em;
 }
 
-.list h3 {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+button {
+    margin-bottom: 2em;
 }
 
 a {
