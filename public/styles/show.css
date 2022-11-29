@@ -8,6 +8,14 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     min-height: 100vh;
+    text-align: center;
+}
+
+.title_image {
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 2em 0em 2em 0em;
 }
 
 #book-shelf, #movie-shelf {
@@ -41,6 +49,7 @@ footer {
     align-items: center;
     border-top: 1px solid rgba(203,210,223);
     border-bottom: 1px solid rgba(203,210,223);
+    /* background-color: rgba(203,210,223); */
     margin: 3em 0em 2em 0em;
 }
 
@@ -99,3 +108,8 @@ a:hover {
 
 /* MODAL CODE END */
 /* MODAL CODE END */
+
+.credit {
+    margin-bottom: 3em;
+    color:rgba(203,210,223,1);
+}

@@ -15,6 +15,18 @@ header {
     margin: 2em 0em 3em 0em;
 }
 
+.title_text {
+    color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 1% 0%;
+}
+
+.title_image {
+    width: 80%;
+    max-width: 800px;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;

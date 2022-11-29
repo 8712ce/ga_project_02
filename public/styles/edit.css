@@ -11,6 +11,13 @@ body {
     min-height: 100vh;
 }
 
+.title_image {
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 2em 0em 2em 0em;
+}
+
 #book-shelf, #movie-shelf {
     box-sizing: border-box;
     width: 100%;
@@ -76,4 +83,9 @@ a:visited {
 
 a:hover {
     color: rgb(108, 143, 155);
+}
+
+.credit {
+    margin-bottom: 3em;
+    color:rgba(203,210,223,1);
 }
