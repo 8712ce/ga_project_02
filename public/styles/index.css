@@ -5,9 +5,14 @@ html {
 body {
     /* background: rgb(234,241,252); */
     background: linear-gradient(0deg, rgba(234,241,252,1) 0%, rgba(203,210,223,1) 100%);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    margin: 2em 0em 3em 0em;
 }
 
 .flex-container {
@@ -42,6 +47,12 @@ body {
 
 .image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .2s;
+    margin: 0.5em;
+}
+
+.image:hover {
+    transform: scale(1.02);
 }
 
 .list {
@@ -65,4 +76,9 @@ a:visited {
 
 a:hover {
     color: rgb(108, 143, 155);
+}
+
+.credit {
+    margin-bottom: 3em;
+    color:rgba(203,210,223,1);
 }

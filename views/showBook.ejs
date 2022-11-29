@@ -17,13 +17,13 @@
                 <p><b>Author:</b> <%= book.author %></p>
                 <p><b>Genre:</b> <%= book.genre %></p>
                 <p><b>Subgenre:</b> <%= book.subgenre %></p>
-                <p class="desc"><b>Description:</b> <%= book.description %></p>
+                <p><b>Description:</b> <%= book.description %></p>
             </div>
 
             <footer>
                 <a href="/books/<%= book._id %>/edit">Edit</a>
                 
-                <button id="openModal" class="remove">Remove This Book from the Shelf</button>
+                <button id="openModal" class="nav">Remove Book from Shelf</button>
                         <div id="modal">
                             <div id="modal-textbox">
                                 <p>Are you sure you want to remove this book from the shelf?</p>

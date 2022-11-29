@@ -7,6 +7,7 @@ body {
     background: linear-gradient(0deg, rgba(234,241,252,1) 0%, rgba(203,210,223,1) 100%);
     margin-left: 20px;
     margin-right: 20px;
+    min-height: 100vh;
 }
 
 #book-shelf, #movie-shelf {
@@ -24,29 +25,27 @@ body {
     margin-bottom: 5em;
 }
 
-.desc {
-    text-align: justify;
-}
-
 .show-image {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.remove {
-    /* align-items: center; */
-    margin: auto;
+    margin-bottom: 2em;
 }
 
 button {
     margin-bottom: 2em;
+    /* background-color: none; */
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     border-top: 1px solid rgba(203,210,223);
     border-bottom: 1px solid rgba(203,210,223);
     margin: 3em 0em 2em 0em;
+}
+
+.nav {
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 a {
@@ -79,7 +78,7 @@ a:hover {
 
 #modal-textbox {
     background-color: white;
-    width: 40%;
+    width: 30%;
     block-size: fit-content;
     margin: 150px auto;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
@@ -92,13 +91,10 @@ a:hover {
 
 #openModal {
     margin: 0.5em 0em 0.5em 0em;
-}
-
-.modal-buttons {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 
 /* MODAL CODE END */

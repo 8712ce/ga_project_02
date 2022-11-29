@@ -43,11 +43,14 @@
             <label for="image">Image:</label>
             <input type="text" name="image" value="<%= movie.image %>"/>
 
-            <button type="submit">Submit</button>
-        </form>
+            <footer>
+                <a href="/movies/show/<%= movie._id %>">Cancel</a>
 
-        <a href="/movies/show/<%= movie._id %>">Cancel</a>
-        <a href="/">Home</a>
+                <button class="nav" type="submit">Submit</button>
+
+                <a href="/">Home</a>
+            </footer>
+        </form>
     </div>
 
 </body>

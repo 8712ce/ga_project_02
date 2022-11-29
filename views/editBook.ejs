@@ -48,11 +48,15 @@
 
             <label for="image">Image:</label>
             <input type="text" name="image" value="<%= book.image %>"/>
+            
+            <footer>
+                <a href="/books/show/<%= book._id %>">Cancel</a>
 
-            <button type="submit">Submit</button>
+                <button class="nav" type="submit">Submit</button>
+
+                <a href="/">Home</a>
+            </footer>
         </form>
-        <a href="/books/show/<%= book._id %>">Cancel</a>
-        <a href="/">Home</a>
     </div>
 
 </body>
