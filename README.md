@@ -31,4 +31,8 @@ gaproject02-production.up.railway.app↗
  <img src="public/assets/wire_frames/film_rec_rec_form.jpg" alt="third wireframe"/>
  
  <h1>Descriptions of any Unsolved problems or major hurdles you had to overcome</h1>
- <p> The book and movie "shelves" expand too far when books/movies with longer titles are entered.  I was unable to figure out how to use the ellipsis because the width of the div was not static (which appears to be required for css to use ellipsis).  The dynamic width was determmined by the images above the titles.</p>
+ <ul>
+  <li>I'm not too pleased with the overall aesthetic/design.  I'd like to acquire a more modern/current design sensibility.</li>
+  <li>The book and movie "shelves" expand too far when books/movies with longer titles are entered.  I was unable to figure out how to use the ellipsis because the width of the div was not static (which appears to be required for css to use ellipsis).  The dynamic width was determmined by the images above the titles.</li>
+  <li>I would like to figure out a way to limit users' abilities to edit/delete certain objects.</li>
+ </ul>
