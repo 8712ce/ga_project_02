@@ -1,7 +1,7 @@
 # ga_project_02
 
 <h1>An embedded screenshot of the app</h1>
-<img src="images/readme_images/screenshot.png" alt="screenshot of homepage"/>
+<img src="public/assets/wire_frames/index_screenshot.png" alt="application screenshot"/>
 
  <h1>List of the Technologies used</h1>
  <ul>
