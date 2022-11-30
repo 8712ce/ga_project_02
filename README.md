@@ -1,9 +1,4 @@
 # ga_project_02
-# technologies used,
-# unsolved problems,
-# user stories,
-# wireframes
-# ga_project_01
 
 <h1>An embedded screenshot of the app</h1>
 <img src="images/readme_images/screenshot.png" alt="screenshot of homepage"/>
@@ -13,6 +8,8 @@
   <li>HTML</li>
   <li>CSS</li>
   <li>JavaScript</li>
+  <li>A working, full-stack application using Node.js, Mongoose, Express and EJS</li>
+  <li>2 Models, both with 7 RESTful routes and full CRUD</li>
  </ul>
  
  <h1>Installation instructions</h1>
@@ -20,15 +17,15 @@
  
  <h1>User stories – who are your users, what do they want and why?</h1>
  <ul>
-  <li>As an agent/editor for a reputable publisher of graphic novels, I want to discover an author/illustrator who has produced a good body of work, who has presented this work to the public, and is hopefully starting to build an online following.</li>
-  <li>As an owner of a successful mobile gaming company, I want to quickly see the character design and coding skills of a candidate, so that I can evaluate whether the candidate meets the requirements for an open position at my company.</li>
-  <li>As a mid-level engineer, I want to view a junior developer's project and read their code, so that I can evaluate their coding skills.</li>
+  <li>As a lover of books and/or film, I want to discover new books and/or films through recommendations from my esteemed peers who are also using this app.</li>
+  <li>As a hipster...ahem...literature and film connoisseur, I want to show off my knowledge by making obscure recommendations that users of this app have probably never heard of...because I'm so cool.</li>
+  <li>As an internet troll, I want to delete all of the entries in this app's database and replace them with completely random (and hopefully offensive) suggestions of my own.</li>
  </ul>
  
  <h1>Your Wireframes – sketches of major views / interfaces in your application</h1>
- <img src="images/readme_images/wireframe_1.jpeg" alt="first wireframe"/>
- <img src="images/readme_images/wireframe_2.jpeg" alt="second wireframe"/>
- <img src="images/readme_images/wireframe_3.jpeg" alt="third wireframe"/>
+ <img src="public/assets/wire_frames/film_rec_main.jpg" alt="first wireframe"/>
+ <img src="public/assets/wire_frames/film_rec_show_page.jpg" alt="second wireframe"/>
+ <img src="public/assets/wire_frames/film_rec_rec_form.jpg" alt="third wireframe"/>
  
  <h1>Descriptions of any Unsolved problems or major hurdles you had to overcome</h1>
- <p> There is a strip of white space underneath the images in the slideshow on my index page.  I cannot figure out how to remove it.</p>
+ <p> The book and movie "shelves" expand too far when books/movies with longer titles are entered.  I was unable to figure out how to use the ellipsis because the width of the div was not static (which appears to be required for css to use ellipsis).  The dynamic width was determmined by the images above the titles.</p>
