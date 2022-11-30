@@ -25,11 +25,7 @@ app.set('view engine', 'ejs')
 app.use(methodOverride('_method'));
 // BODY PARSER: USED FOR POST/PUT/PATCH ROUTES: THIS WILL TAKE INCOMING STRINGS FROM THE BODY THAT ARE URL ENCODED AND PARSE THEM INTO AN OBJECT THAT CAN BE ACCESSED IN THE REQUEST PARAMETER AS A PROPERTY CALLED BODY (REQ.BODY). //
 app.use(express.urlencoded({ extended: true }));
-// AN EXAMPLE FUNCTION THAT SHOWS HOW MIDDLEWARE WILL BE RUN EVERY TIME A ROUTE IS ACCESSED. //
-app.use((req, res, next) => {
-    console.log('I run for all routes');
-    next();
-});
+
 
 
 
