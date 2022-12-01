@@ -18,10 +18,10 @@
     <div id="book-shelf">
         <form class="flex-container" action="/books/" method="post">
             <label for="title">Title:</label>
-            <input type="text" name="title"/>
+            <input type="text" name="title" required/>
 
             <label for="author">Author:</label>
-            <input type="text" name="author"/>
+            <input type="text" name="author" required/>
 
             <label for="genre">Genre:</label>
             <select name="genre">
@@ -51,7 +51,7 @@
             <input type="text" name="description" placeholder="(Optional)"/>
 
             <label for="image">Image:</label>
-            <input type="text" name="image" placeholder="(Optional Hyperlink)"/>
+            <input type="text" name="image" value="/assets/no_image.jpg"/>
 
             <footer>
                 <button type="submit">Submit</button>

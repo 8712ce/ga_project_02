@@ -10,7 +10,7 @@ const bookSchema = new Schema(
         genre: { type: String, enum: [ 'Fiction', 'Nonfiction'] },
         subgenre: { type: String, enum: [ 'Action / Adventure', 'Biographical', 'Comedy', 'Drama', 'Experimental', 'Fantasy', 'Graphic Novel', 'Historical', 'Horror', 'Mystery', 'Science', 'Science Fiction', 'Thriller', 'War' ] },
         description: { type: String },
-        image: { type: String, default: 'https://sainfoinc.com/wp-content/uploads/2018/02/image-not-available-570x570.jpg' }
+        image: { type: String, default: '/assets/no_image.jpg' }
     }
 )
 

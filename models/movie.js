@@ -9,7 +9,7 @@ const movieSchema = new Schema(
         director: { type: String, required: true },
         genre: { type: String, enum: [ 'Action / Adventure', 'Biographical', 'Comedy', 'Documentary', 'Drama', 'Experimental', 'Fantasy', 'Historical', 'Horror', 'Mystery', 'Science Fiction', 'Thriller', 'War', 'Western' ] },
         description: { type: String },
-        image: { type: String, default: 'https://sainfoinc.com/wp-content/uploads/2018/02/image-not-available-570x570.jpg' }
+        image: { type: String, default: '/assets/no_image.jpg' }
     }
 )
 
