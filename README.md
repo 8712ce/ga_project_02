@@ -1,6 +1,6 @@
 # ga_project_02
 <h1>Link to my hosted, working app.</h1>
-https://gaproject02-production.up.railway.app/
+https://req-recommend.herokuapp.com/
 
 <h1>An embedded screenshot of the app</h1>
 <img src="public/assets/wire_frames/index_screenshot.png" alt="application screenshot"/>
